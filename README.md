@@ -46,7 +46,7 @@ movieexplorer/
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/preethi-thakur/prodesk-IT-mission11>
 ```
 
 Move into the project directory:
