@@ -1,5 +1,5 @@
 'use client'
-
+import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Image from 'next/image'
@@ -249,11 +249,13 @@ export default function Home() {
             {featuredMovie && (
               <div className="relative mb-12 overflow-hidden rounded-3xl">
                 <div className="relative h-[500px] w-full">
-                  <img
-                    src={getImageUrl(featuredMovie.Poster)}
-                    alt={featuredMovie.Title}
-                    className="h-[500px] w-full object-cover"
-                  />
+                 <Image
+  src={getImageUrl(featuredMovie.Poster)}
+  alt={featuredMovie.Title}
+  width={800}
+  height={500}
+  className="h-[500px] w-full object-cover"
+/>
                 </div>
 
                 <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
